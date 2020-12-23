@@ -1,0 +1,9 @@
+---
+- name: Install app essential tools
+  package:
+    state: latest
+    name: "{{ item }}"
+  loop:
+    - librsvg2-bin
+    - libgpgme11-dev
+    - imagemagick

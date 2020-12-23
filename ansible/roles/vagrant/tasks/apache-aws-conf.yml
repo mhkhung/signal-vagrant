@@ -1,0 +1,13 @@
+---
+- name: Create /etc/apache2/conf-available/aws_env.conf
+  template:
+    src: templates/aws_env.conf.j2
+    dest: /etc/apache2/conf-available/aws_env.conf
+    mode: 0644
+  notify: Restart apache
+- name: Create /etc/apache2/conf-enabled/aws_env.conf
+  file:
+    src: /etc/apache2/conf-available/aws_env.conf
+    dest: /etc/apache2/conf-enabled/aws_env.conf
+    state: link
+  notify: Restart apache

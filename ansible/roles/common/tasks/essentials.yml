@@ -1,0 +1,25 @@
+---
+- name: Install essential packages.
+  package:
+    state: latest
+    name: "{{ item }}"
+  loop:
+    - apt-transport-https
+    - build-essential
+    - curl
+    - default-libmysqlclient-dev
+    - git
+    - git-core
+    - libcairo2-dev
+    - libgif-dev
+    - libjpeg-dev
+    - libmcrypt-dev
+    - libpango1.0-dev
+    - librsvg2-dev
+    - ntp
+    - tmpreaper
+    - traceroute
+    - tzdata
+    - unzip
+    - wget
+    - whois

@@ -1,0 +1,13 @@
+---
+- import_role:
+    name: "geerlingguy.nodejs"
+- name: Install npm modules
+  npm:
+    state: present
+    name: "{{ item }}"
+    global: true
+  loop:
+    - bower
+    - grunt-cli
+    - node-gyp
+    - npm

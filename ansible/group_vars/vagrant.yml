@@ -1,0 +1,7 @@
+---
+install_redis_server: false
+swap_file_size_mb: '4096'
+users:
+  - vagrant
+docker_users:
+  - vagrant

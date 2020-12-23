@@ -1,0 +1,7 @@
+---
+- import_tasks: apache-aws-conf.yml
+  when:
+    - AWS_ACCESS_KEY_ID is defined
+    - AWS_ACCESS_KEY_ID != ""
+    - AWS_SECRET_ACCESS_KEY is defined
+    - AWS_SECRET_ACCESS_KEY != ""

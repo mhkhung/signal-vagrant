@@ -1,0 +1,19 @@
+---
+- name: Install locale
+  package:
+    state: latest
+    name: locales
+  
+- name: Intall language files
+  locale_gen:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - "en_US"
+    - "en_US.UTF-8"
+    - "en_CA"
+    - "en_CA.UTF-8"
+    - "fr_CA"
+    - "fr_CA.UTF-8"
+    - "en_AU"
+    - "en_AU.UTF-8"

@@ -1,0 +1,12 @@
+---
+- hosts: vagrant
+  vars_prompt:
+    - name: "AWS_ACCESS_KEY_ID"
+      prompt: "AWS_ACCESS_KEY_ID (Leave empty to skip provisioning)"
+    - name: "AWS_SECRET_ACCESS_KEY"
+      prompt: "AWS_SECRET_ACCESS_KEY (Leave empty to skip provisioning)"
+  roles:
+    - common
+    - development
+    - app
+    - vagrant

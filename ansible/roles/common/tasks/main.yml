@@ -1,0 +1,6 @@
+---
+- import_tasks: users.yml
+- import_tasks: essentials.yml
+- import_tasks: locale.yml
+
+

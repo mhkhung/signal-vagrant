@@ -1,0 +1,12 @@
+---
+- name: Install redis
+  package:
+    state: latest
+    name: "{{ item }}"
+  loop:
+    - redis-tools
+- name: Install redis-server
+  package:
+    state: latest
+    name: redis-server
+  when: install_redis_server == true
