@@ -11,6 +11,8 @@
     ~/work/signal-vagrant/signal$ git clone git@github.com:mhkhung/Signal-Server.git TextSecureServer
     ~/work/signal-vagrant/signal$ git clone https://github.com/aqnouch/Signal-Setup-Guide.git
     ~/work/signal-vagrant/signal$ git clone https://github.com/signalapp/libsignal-protocol-c.git    
+    ~/work/signal-vagrant/signal$ git clone https://github.com/AsamK/signal-cli  
+    ~/work/signal-vagrant/signal$ git clone https://github.com/WhisperSystems/libsignal-service-java
     ```
 
 1. Boot vagrant
@@ -36,12 +38,13 @@
     AWS_SECRET_ACCESS_KEY (Leave empty to skip provisioning): <not used for now>
     ```
 
-1. Install docker image
+1. Install support docker images
 
     ```
     $ cd
     $ git clone https://github.com/aqnouch/signal-docker-dependencies.git
-    $ cd signal-docker-dependencies
+    $ git clone https://github.com/bbernhard/signal-cli-rest-api   
+
     ```
 
 1. Start docker - needed every time the vagrant restarts
