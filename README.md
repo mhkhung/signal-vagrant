@@ -10,8 +10,8 @@
     ~/work/signal-vagrant$ mkdir signal && cd signal
     ~/work/signal-vagrant/signal$ git clone git@github.com:mhkhung/Signal-Server.git TextSecureServer
     ~/work/signal-vagrant/signal$ git clone git@github.com:mhkhung/signal-cli.git
+    ~/work/signal-vagrant/signal$ git clone git@github.com:mhkhung/libsignal-service-java.git
     ~/work/signal-vagrant/signal$ git clone https://github.com/aqnouch/Signal-Setup-Guide.git
-    ~/work/signal-vagrant/signal$ git clone https://github.com/WhisperSystems/libsignal-service-java
     ```
 
 1. Boot vagrant
